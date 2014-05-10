@@ -21,7 +21,7 @@ set background=dark
 highlight Pmenu ctermfg=0 ctermbg=3
 highlight PmenuSel ctermfg=0 ctermbg=7
 if &bg == "dark"
-highlight MatchParen ctermbg=darkblue guibg=blue
+    highlight MatchParen ctermbg=darkblue guibg=blue
 endif
 
 "Make tabs, trailing whitespace, and non-breaking spaces visible
@@ -39,7 +39,7 @@ syntax on
 filetype on
 filetype plugin on
 if has("autocmd")
-      filetype indent on
+    filetype indent on
 endif
 
 " Highlight search terms...
@@ -47,9 +47,7 @@ endif
 set hlsearch
 set incsearch " ...dynamically as they are typed.
 set visualbell
-
 noremap <Leader>t :%!perltidy -q<CR>\
-
-nnoremap <F2> :set invpaste paste?<CR>
+noremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
 set showmode
