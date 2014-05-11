@@ -3,6 +3,6 @@ dotfiles
 
 My dot files as a homesick 'castle'
 
-http://dotfiles.github.io/
+https://github.com/technicalpickles/homesick
 
 http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/
