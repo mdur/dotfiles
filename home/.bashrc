@@ -15,6 +15,22 @@ if [ -e /usr/share/terminfo/x/xterm-256color ]; then
         export TERM='xterm-color'
 fi
 
-[ -e ~/perl5/perlbrew ] && source ~/perl5/perlbrew/etc/bashrc
 [ -e ~/.secure-env ] && source ~/.secure-env
-[ -e ~/.rbenv/bin ] && export PATH="$HOME/.rbenv/bin:$PATH" && eval "$(rbenv init - --no-rehash)"
+
+#if perlbrew is installed source it, otherwise make it easy to install
+if [ -e ~/perl5/perlbrew ]; then
+    source ~/perl5/perlbrew/etc/bashrc
+else
+    echo 'perlbrew not found: run install_perlbrew to install' 
+    alias install_perlbrew='curl -kL http://install.perlbrew.pl | bash'
+fi
+
+#if rbenv is installed source it, otherwise make it easy to install
+if [ -e ~/.rbenv/bin/rbenv ] || [ -e /usr/local/bin/rbenv ]; then
+    export PATH="$HOME/.rbenv/bin:$PATH"
+    eval "$(rbenv init - --no-rehash)"
+else
+    echo 'rbenv not found: run install_rbenv to install' 
+    alias install_rbenv='git clone https://github.com/sstephenson/rbenv.git ~/.rbenv && \
+        git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build'
+fi
