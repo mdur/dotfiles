@@ -1,15 +1,18 @@
 [submodule "home/.vim/bundle/nerdtree"]
-    path = home/.vim/bundle/nerdtree
-    url = https://github.com/scrooloose/nerdtree.git
+	path = home/.vim/bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
 [submodule "home/.vim/bundle/snipmate.vim"]
-    path = home/.vim/bundle/snipmate.vim
-    url = https://github.com/msanders/snipmate.vim.git
+	path = home/.vim/bundle/snipmate.vim
+	url = https://github.com/msanders/snipmate.vim.git
 [submodule "home/.vim/bundle/vim-haml"]
-    path = home/.vim/bundle/vim-haml
-    url = https://github.com/tpope/vim-haml.git
+	path = home/.vim/bundle/vim-haml
+	url = https://github.com/tpope/vim-haml.git
 [submodule "home/.vim/bundle/vim-ruby"]
-    path = home/.vim/bundle/vim-ruby
-    url = https://github.com/vim-ruby/vim-ruby.git
+	path = home/.vim/bundle/vim-ruby
+	url = https://github.com/vim-ruby/vim-ruby.git
 [submodule "home/.vim/bundle/vim=surround"]
     path = home/.vim/bundle/vim-surround
     url = https://github.com/tpope/vim-surround.git 
+[submodule "home/.vim/bundle/vim-surround"]
+	path = home/.vim/bundle/vim-surround
+	url = https://github.com/tpope/vim-surround.git
