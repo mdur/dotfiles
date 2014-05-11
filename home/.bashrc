@@ -16,5 +16,5 @@ if [ -e /usr/share/terminfo/x/xterm-256color ]; then
 fi
 
 [ -e ~/perl5/perlbrew ] && source ~/perl5/perlbrew/etc/bashrc
-[ -e ~/.secure-env && source ] ~/.secure-env
+[ -e ~/.secure-env && source ] && ~/.secure-env
 [ -e /usr/local/bin/rbenv ] && eval "$(rbenv init - --no-rehash)"
