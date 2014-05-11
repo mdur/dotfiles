@@ -17,4 +17,4 @@ fi
 
 [ -e ~/perl5/perlbrew ] && source ~/perl5/perlbrew/etc/bashrc
 [ -e ~/.secure-env ] && source ~/.secure-env
-[ -e /usr/local/bin/rbenv ] && eval "$(rbenv init - --no-rehash)"
+[ -e /usr/local/bin/ ] && export PATH="$HOME/.rbenv/bin:$PATH" && eval "$(rbenv init - --no-rehash)"
