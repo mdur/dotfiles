@@ -22,7 +22,9 @@ if [ -e ~/perl5/perlbrew ]; then
     source ~/perl5/perlbrew/etc/bashrc
 else
     echo 'perlbrew not found: run install_perlbrew to install' 
-    alias install_perlbrew='curl -kL http://install.perlbrew.pl | bash'
+    alias install_perlbrew='curl -kL http://install.perlbrew.pl \
+        >~/install.perlbrew.pl && echo "check out ~/install.perlbrew.pl\
+ then run: cat ~/install.perlbrew.pl | bash if it looks OK"'
 fi
 
 #if rbenv is installed source it, otherwise make it easy to install
