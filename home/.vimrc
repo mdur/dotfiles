@@ -12,11 +12,12 @@ set shiftround
 set nojoinspaces
 set t_Co=256
 "colorscheme molokai
-colorscheme mustang
+"colorscheme mustang
 "colorscheme wombat 
 "colorscheme distinguished
 "colorscheme grb256
 "colorscheme acidcupcake 
+colorscheme Tomorrow-Night-Eighties 
 set background=dark
 highlight Pmenu ctermfg=0 ctermbg=3
 highlight PmenuSel ctermfg=0 ctermbg=7
