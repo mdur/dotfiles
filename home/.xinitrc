@@ -47,7 +47,7 @@ esac
 # Add your own lines here...
 #
 /usr/bin/xscreensaver -no-splash &
-
+xset b off
 # day planer deamon
 # pland &
 
@@ -56,6 +56,5 @@ esac
 #
 unset WINDOW_MANAGER STARTUP
 exec $WINDOWMANAGER ${1+"$@"}
-
 # call failsafe
 exit 0
