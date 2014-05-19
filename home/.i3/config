@@ -180,7 +180,6 @@ bindsym XF86AudioLowerVolume exec amixer -q set Master 10%- unmute
 bindsym XF86AudioMute exec amixer -q set Master toggle
 
 
-exec xscreensaver -no-splash 
 exec --no-startup-id nitrogen --restore
 exec --no-startup-id xcompmgr
 exec --no-startup-id nm-applet
