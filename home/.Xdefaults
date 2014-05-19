@@ -1,4 +1,4 @@
-URxvt.background: [60]#2c2c2c
+URxvt.background: [55]#2c2c2c
 *foreground: #dcdccc
 *cursorColor: #93a1a1
 
@@ -31,8 +31,8 @@ URxvt.background: [60]#2c2c2c
 *color14: #93e0e3
 
 !! white dark/light
-*color7: #dcdccc
-color15: #ffffff
+*color7: ##f3f8fa
+*color15: #ffffff
 
 URxvt*depth: 32
 URxvt*saveLines: 1000
