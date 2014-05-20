@@ -31,7 +31,7 @@ URxvt.background: [75]#2c2c2c
 *color14: #93e0e3
 
 !! white dark/light
-*color7: ##f3f8fa
+*color7:  #f3f8fa
 *color15: #ffffff
 
 URxvt*depth: 32
