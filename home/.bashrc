@@ -9,6 +9,7 @@ alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %
 export EDITOR='vim'
 export LANG=en_US.UTF-8
 export CLICOLOR=1
+export GOPATH=$PATH:/usr/local/bin/go
 
 if [ -e /usr/share/terminfo/r/rxvt-unicode-256color ]; then
         export TERM='rxvt-unicode-256color'
