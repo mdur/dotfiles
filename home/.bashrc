@@ -13,6 +13,7 @@ export GOPATH=$PATH:/usr/local/bin/go
 
 if [ -e /usr/share/terminfo/r/rxvt-unicode-256color ]; then
         export TERM='rxvt-unicode-256color'
+        [ -e /etc/seas ] && unset COLORFGBG
     else
         export TERM='xterm-color'
 fi

@@ -50,6 +50,14 @@ esac
 xset b off
 # day planer deamon
 # pland &
+if [[ `hostname -f` =~ eno.* ]]; then
+    Display1='DVI-0'
+    Display2='DisplayPort-0'
+    /usr/bin/xrandr --output $Display1 --primary
+    /usr/bin/xrandr --output $Display1 --left-of $Display2
+    /usr/bin/xrandr --output $Display1 --mode 1920x1080
+    /usr/bin/xrandr --output $Display2 --mode 1920x1080
+fi
 
 # 
 # finally start the window manager
