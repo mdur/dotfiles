@@ -1,4 +1,4 @@
-alias ls='ls -h --color=auto'
+alias ls='ls -h'
 alias ll='ls -lasF'
 alias la='ls -a'
 alias perlcritic='perlcritic --verbose=5 --harsh'

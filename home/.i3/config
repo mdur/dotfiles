@@ -167,12 +167,13 @@ client.focused          #B2C48D #90A959 #ffffff #90A959
 client.focused_inactive #90a959 #303030 #b0b0b0 #303030
 client.unfocused        #303030 #303030 #b0b0b0 #303030
 client.urgent           #C86F70 #AC4142 #ffffff
-client.background #2c2c2c
+client.background #303030
 new_window pixel 1
 
 ## sleep stuff
 bindsym XF86Sleep exec xscreensaver-command -lock
 bindsym Control+XF86Sleep exit
+bindsym $mod+z exec xscreesaver-command -lock
 
 
 bindsym XF86AudioRaiseVolume exec amixer -q set Master 10%+ unmute
@@ -183,3 +184,5 @@ bindsym XF86AudioMute exec amixer -q set Master toggle
 exec --no-startup-id nitrogen --restore
 exec --no-startup-id xcompmgr
 exec --no-startup-id nm-applet
+
+for_window [class="smplayer"] floating enable, border normal
