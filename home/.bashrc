@@ -4,6 +4,8 @@ alias la='ls -a'
 alias perlcritic='perlcritic --verbose=5 --harsh'
 alias vssh='vagrant ssh'
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --"
+alias homesick="$(ruby -rubygems -e 'puts Gem.user_dir')/bin/homesick"
+
 [ -e /etc/os-release ] && alias su='su --preserve-environment'
 
 export EDITOR='vim'
@@ -11,8 +13,8 @@ export LANG=en_US.UTF-8
 export CLICOLOR=1
 export GOPATH=$PATH:/usr/local/bin/go
 
-if [ -e /usr/share/terminfo/r/rxvt-unicode-256color ]; then
-        export TERM='rxvt-unicode-256color'
+if [ -e /usr/share/terminfo/k/konsole-256color ]; then
+        export TERM='konsole-256color'
     else
         export TERM='xterm-color'
 fi

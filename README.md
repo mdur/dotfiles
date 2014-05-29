@@ -1,8 +1,24 @@
 dotfiles
 ========
 
-My dot files as a homesick 'castle'
+This repo is a [homesick] castle, for sychronizing dotfiles across multiple computers.
 
-https://github.com/technicalpickles/homesick
+Requirements
+------------
 
-http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/
+ - rubygems
+ - [homesick]
+
+Installation
+------------
+
+After installing both `ruby` and `rubygems`, run:
+
+```
+gem install --user-install homesick
+alias homesick="$(ruby -rubygems -e 'puts Gem.user_dir')/bin/homesick"
+homesick clone https://github.com/mdur/dotfiles
+homesick symlink dotfiles
+```
+
+[homesick]:https://github.com/technicalpickles/homesick
