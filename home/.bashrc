@@ -4,7 +4,6 @@ alias la='ls -a'
 alias perlcritic='perlcritic --verbose=5 --harsh'
 alias vssh='vagrant ssh'
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --"
-alias homesick="$(ruby -rubygems -e 'puts Gem.user_dir')/bin/homesick"
 
 [ -e /etc/os-release ] && alias su='su --preserve-environment'
 
