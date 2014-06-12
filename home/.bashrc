@@ -1,4 +1,4 @@
-alias ls='ls -h'
+alias ls='ls -h --color=auto'
 alias ll='ls -lasF'
 alias la='ls -a'
 alias perlcritic='perlcritic --verbose=5 --harsh'
@@ -10,7 +10,7 @@ alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %
 export EDITOR='vim'
 export LANG=en_US.UTF-8
 export CLICOLOR=1
-export GOPATH=$PATH:/usr/local/bin/go
+export COLORTERM=1
 
 if [ -e /usr/share/terminfo/k/konsole-256color ]; then
         export TERM='konsole-256color'
