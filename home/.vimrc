@@ -12,8 +12,8 @@ set shiftround
 set nojoinspaces
 set t_Co=256
 "colorscheme molokai
-colorscheme mustang
-"colorscheme wombat 
+"colorscheme mustang
+colorscheme wombat 
 "colorscheme distinguished
 "colorscheme grb256
 "colorscheme acidcupcake 
