@@ -175,11 +175,14 @@ bindsym XF86Sleep exec xscreensaver-command -lock
 bindsym Control+XF86Sleep exit
 bindsym $mod+z exec xscreesaver-command -lock
 
-
+## audio shortcuts for dell xps 13
 bindsym XF86AudioRaiseVolume exec amixer -q set Master 10%+ unmute
 bindsym XF86AudioLowerVolume exec amixer -q set Master 10%- unmute
 bindsym XF86AudioMute exec amixer -q set Master toggle
 
+# make Assignments windows floating
+for_window [title="Assignments"] floating enable
+for_window [class="Toplevel"] floating enable
 
 exec --no-startup-id nitrogen --restore
 exec --no-startup-id xcompmgr
