@@ -13,11 +13,11 @@ set nojoinspaces
 set t_Co=256
 "colorscheme molokai
 "colorscheme mustang
-colorscheme wombat 
+"colorscheme wombat 
 "colorscheme distinguished
 "colorscheme grb256
 "colorscheme acidcupcake 
-"colorscheme Tomorrow-Night-Eighties 
+colorscheme Tomorrow-Night-Eighties 
 set background=dark
 highlight Pmenu ctermfg=0 ctermbg=3
 highlight PmenuSel ctermfg=0 ctermbg=7
@@ -36,6 +36,7 @@ call matchadd('ColorColumn', '\%81v', 100)
 " File-type highlighting and configuration.
 " Run :filetype (without args) to see what you may have
 " to turn on yourself, or just set them all to be sure.
+execute pathogen#infect()
 syntax on
 filetype on
 filetype plugin on
