@@ -7,7 +7,7 @@ set ruler
 set backspace=indent,eol,start
 set nowrap
 set expandtab
-set shiftwidth=4
+set shiftwidth=2
 set shiftround
 set nojoinspaces
 set t_Co=256
