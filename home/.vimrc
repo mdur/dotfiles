@@ -7,7 +7,7 @@ set ruler
 set backspace=indent,eol,start
 set nowrap
 set expandtab
-set shiftwidth=2
+set shiftwidth=4
 set shiftround
 set nojoinspaces
 set t_Co=256
@@ -53,3 +53,8 @@ noremap <Leader>t :%!perltidy -q<CR>\
 noremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
 set showmode
+
+autocmd FileType ruby setlocal shiftwidth=2 tabstop=2
+autocmd FileType html setlocal shiftwidth=2 tabstop=2
+autocmd FileType yaml setlocal shiftwidth=2 tabstop=2
+autocmd FileType python setlocal expandtab shiftwidth=4 softtabstop=4
