@@ -38,8 +38,7 @@ call matchadd('ColorColumn', '\%81v', 100)
 " to turn on yourself, or just set them all to be sure.
 execute pathogen#infect()
 syntax on
-filetype on
-filetype plugin on
+filetype indent plugin on
 if has("autocmd")
     filetype indent on
 endif
@@ -54,7 +53,6 @@ noremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
 set showmode
 
-autocmd FileType ruby setlocal shiftwidth=2 tabstop=2
-autocmd FileType html setlocal shiftwidth=2 tabstop=2
-autocmd FileType yaml setlocal shiftwidth=2 tabstop=2
-autocmd FileType python setlocal expandtab shiftwidth=4 softtabstop=4
+autocmd FileType ruby setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
+autocmd FileType yaml setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
+autocmd FileType python setlocal expandtab shiftwidth=4 tabstop=8 softtabstop=4
