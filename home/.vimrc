@@ -17,7 +17,8 @@ set t_Co=256
 "colorscheme distinguished
 "colorscheme grb256
 "colorscheme acidcupcake 
-colorscheme Tomorrow-Night-Eighties 
+colorscheme sumi 
+"colorscheme Tomorrow-Night-Eighties 
 set background=dark
 highlight Pmenu ctermfg=0 ctermbg=3
 highlight PmenuSel ctermfg=0 ctermbg=7
