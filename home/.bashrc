@@ -10,12 +10,12 @@ alias perlcritic='perlcritic --verbose=5 --harsh'
 alias vssh='vagrant ssh'
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --"
 
-[ -e /etc/os-release ] && alias su='su --preserve-environment'
-
 export EDITOR='vim'
 export LANG=en_US.UTF-8
 # CLICOLOR for Os X and BSD
 export CLICOLOR=1
+
+[ -e ~/Aptana_Studio_3 ] && export PATH="$HOME/Aptana_Studio_3:$PATH" 
 
 if [ -e /usr/share/terminfo/k/konsole-256color ]; then
         export TERM='konsole-256color'

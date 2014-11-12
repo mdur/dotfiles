@@ -173,12 +173,20 @@ new_window pixel 1
 # sleep stuff
 bindsym XF86Sleep exec xscreensaver-command -lock
 bindsym Control+XF86Sleep exit
-bindsym $mod+z exec xscreesaver-command -lock
+bindsym $mod+z exec xscreensaver-command -lock
 
 # audio shortcuts for dell xps 13
 bindsym XF86AudioRaiseVolume exec amixer -q set Master 10%+ unmute
 bindsym XF86AudioLowerVolume exec amixer -q set Master 10%- unmute
 bindsym XF86AudioMute exec amixer -q set Master toggle
+
+
+# floating
+for_window [window_role="pop-up"] floating enable
+for_window [class="Kcalc" instance="kcalc"] floating enable
+for_window [class="xfreerdp" instance="xfreerdp"] floating enable
+for_window [class="K3b" instance="k3b"] floating enable
+for_window [class="Okular" instance="okular"] floating enable
 
 # make Assignments windows floating
 for_window [title="Assignments"] floating enable
