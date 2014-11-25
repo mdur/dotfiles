@@ -27,6 +27,8 @@ if &bg == "dark"
 endif
 
 "Highlight the 81st column
+highlight ExtraWhitespace ctermbg=yellow guibg=yellow
+call matchadd('ExtraWhitespace', '\s\+$\| \+\ze\t', 100)
 highlight ColorColumn ctermbg=red
 call matchadd('ColorColumn', '\%81v', 100)
 
@@ -41,15 +43,18 @@ if has("autocmd")
 endif
 
 " Highlight search terms...
-"this is causing an annoying artifact..
 set hlsearch
 set incsearch " ...dynamically as they are typed.
 set visualbell
-noremap <Leader>t :%!perltidy -q<CR>\
+
 noremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
 set showmode
+noremap <F3> : %!perltidy -q<CR>
+" remove trailing whitespace
+noremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
 
+" filetype spacing preferences
 autocmd FileType ruby setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 autocmd FileType yaml setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 autocmd FileType python setlocal expandtab shiftwidth=4 tabstop=8 softtabstop=4
