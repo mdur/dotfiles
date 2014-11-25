@@ -1,16 +1,15 @@
-set hidden
-set ignorecase
-set smartcase
-set scrolloff=3
-set ruler
-" Intuitive backspacing in insert mode
-set backspace=indent,eol,start
-set nowrap
-set expandtab
-set shiftwidth=4
-set shiftround
-set nojoinspaces
-set t_Co=256
+set hidden              " hide buffers rather than closing
+set ignorecase          " ignore case when searching
+set smartcase           " ignore case if search pattern is all lowercase
+set scrolloff=3         " prefer at least 3 lines beneath cursor
+set ruler               " enable ruler
+set backspace=indent,eol,start " Intuitive backspacing in insert mode
+set nowrap              " no line auto line wrap
+set expandtab           " expand tabs to spaces
+set shiftwidth=4        " number of columns to indent
+set shiftround          " rounds shift indents
+set nojoinspaces        " don't add spaces when joining
+set t_Co=256            " enable 256 colors
 "colorscheme molokai
 "colorscheme mustang
 "colorscheme wombat 
@@ -22,13 +21,10 @@ colorscheme sumi
 set background=dark
 highlight Pmenu ctermfg=0 ctermbg=3
 highlight PmenuSel ctermfg=0 ctermbg=7
+
 if &bg == "dark"
     highlight MatchParen ctermbg=darkblue guibg=blue
 endif
-
-"Make tabs, trailing whitespace, and non-breaking spaces visible
-"exec "set listchars=tab:\uBB\uBB,trail:\uB7,nbsp:~"
-"set list
 
 "Highlight the 81st column
 highlight ColorColumn ctermbg=red
