@@ -12,12 +12,12 @@ set nojoinspaces        " don't add spaces when joining
 set t_Co=256            " enable 256 colors
 "colorscheme molokai
 "colorscheme mustang
-"colorscheme wombat 
+"colorscheme wombat
 "colorscheme distinguished
 "colorscheme grb256
-"colorscheme acidcupcake 
-colorscheme sumi 
-"colorscheme Tomorrow-Night-Eighties 
+"colorscheme acidcupcake
+"colorscheme sumi
+colorscheme Tomorrow-Night-Eighties
 set background=dark
 highlight Pmenu ctermfg=0 ctermbg=3
 highlight PmenuSel ctermfg=0 ctermbg=7
