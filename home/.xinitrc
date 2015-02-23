@@ -50,7 +50,7 @@ esac
 xset b off
 # day planer deamon
 # pland &
-if [[ `hostname -f` =~ eno.* ]]; then
+if [[ `cat /etc/HOSTNAME` =~ eno.* ]]; then
     Display1='DVI-0'
     Display2='DisplayPort-0'
     /usr/bin/xrandr --output $Display1 --primary
