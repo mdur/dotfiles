@@ -15,8 +15,6 @@ export LANG=en_US.UTF-8
 # CLICOLOR for Os X and BSD
 export CLICOLOR=1
 
-[ -e ~/Aptana_Studio_3 ] && export PATH="$HOME/Aptana_Studio_3:$PATH" 
-
 if [ -e /usr/share/terminfo/k/konsole-256color ]; then
         export TERM='konsole-256color'
     else
